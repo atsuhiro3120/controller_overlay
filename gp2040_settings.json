@@ -1,0 +1,24 @@
+{
+  "labels": {
+    "back": "LS",
+    "left": "L",
+    "down": "D",
+    "right": "R",
+    "ls": "M2",
+    "lb": "LB",
+    "up1": "U",
+    "up2": "M1",
+    "lt": "LT",
+    "x": "X",
+    "y": "Y",
+    "rb": "RB",
+    "a": "A",
+    "b": "B",
+    "rt": "RT",
+    "rs": "RS"
+  },
+  "bg": "C:/Users/Novem/OneDrive/デスクトップ/配信関連/background/card_3.png",
+  "bg_x": 62,
+  "bg_y": 23,
+  "bg_scale": 1.4
+}
