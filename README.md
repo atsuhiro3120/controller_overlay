@@ -14,6 +14,16 @@
 - 入力番号を確認できるデバッグ出力
 - コントローラー未接続状態からの接続・再接続に対応
 
+## 表示例
+
+### 全体レイアウト
+
+![全体レイアウトの表示例1](<image/スクリーンショット 2026-10-07 173834.png>)
+
+![全体レイアウトの表示例2](<image/スクリーンショット 2026-10-07 173846.png>)
+
+![全体レイアウトの表示例3](<image/スクリーンショット 2026-10-07 174355.png>)
+
 ## 必要な環境
 
 - Windows
@@ -55,6 +65,15 @@ dist\controller_overlay.exe
 1. コントローラーを接続する
 2. `dist\controller_overlay.exe` をダブルクリックする
 3. 表示された一覧から使用するコントローラーを選択する
+
+OBS 用に使う場合は、通常モードで起動したあとに表示されるウィンドウを OBS の「ウィンドウキャプチャ」で選択してください。`.exe` に起動オプションを付けて実行したい場合は、PowerShell から次のように起動できます。
+
+```powershell
+cd C:\Users\Novem\OneDrive\デスクトップ\controller_overlay
+.\dist\controller_overlay.exe --obs
+```
+
+設定ファイルの `gp2040_settings.json` は、`controller_overlay.exe` と同じプロジェクトフォルダーに置いてください。背景画像を使用する場合は、設定ファイルの `bg` に画像のパスを指定します。
 
 ## 起動方法
 
@@ -269,6 +288,10 @@ controller_overlay/
 ├─ controller_overlay.spec     # PyInstaller 用ビルド設定
 ├─ gp2040_settings.json        # ラベル・背景画像・位置・倍率の設定
 ├─ layout.js                   # 参考用の HTML レイアウト定義
+├─ image/                       # READMEに掲載するスクリーンショット
+│  ├─ スクリーンショット 2026-10-07 173834.png
+│  ├─ スクリーンショット 2026-10-07 173846.png
+│  └─ スクリーンショット 2026-10-07 174355.png
 ├─ dist/
 │  └─ controller_overlay.exe   # Python不要で起動できるビルド済み実行ファイル
 └─ README.md                   # このファイル
